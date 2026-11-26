@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Top URL & Options Bar -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="6dp"
+        android:background="?attr/colorPrimary">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_media_previous"
+            app:tint="?attr/colorOnPrimary"
+            android:contentDescription="Back" />
+
+        <EditText
+            android:id="@+id/etUrl"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="4dp"
+            android:paddingHorizontal="10dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="http://192.168.1.1"
+            android:inputType="textUri"
+            android:imeOptions="actionGo"
+            android:singleLine="true"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnGo"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:minWidth="56dp"
+            android:text="@string/go"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/btnOptions"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="2dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_more"
+            app:tint="?attr/colorOnPrimary"
+            android:contentDescription="@string/options" />
+    </LinearLayout>
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:max="100"
+        android:visibility="gone" />
+
+    <!-- Wordlist Status Bar -->
+    <LinearLayout
+        android:id="@+id/testerStatusBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="10dp"
+        android:background="#202124"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvTesterStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:text="Testing..." />
+
+        <Button
+            android:id="@+id/btnStopTester"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="إيقاف"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <!-- Active WebView Container -->
+    <FrameLayout
+        android:id="@+id/webContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Bottom Tools Bar -->
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="?attr/colorPrimary">
+
+        <ImageButton
+            android:id="@+id/btnNewTab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@android:drawable/ic_input_add"
+            app:tint="?attr/colorOnPrimary"
+            android:contentDescription="@string/new_tab" />
+
+        <ImageButton
+            android:id="@+id/btnDesktop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@android:drawable/ic_menu_view"
+            app:tint="?attr/colorOnPrimary"
+            android:contentDescription="@string/desktop_mode" />
+
+        <ImageButton
+            android:id="@+id/btnWordlist"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@android:drawable/ic_menu_edit"
+            app:tint="?attr/colorOnPrimary"
+            android:contentDescription="@string/wordlist_test" />
+
+        <ImageButton
+            android:id="@+id/btnSavedCreds"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@android:drawable/ic_menu_save"
+            app:tint="?attr/colorOnPrimary"
+            android:contentDescription="@string/saved_creds" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NetRouter Browser</string>
+    <string name="go">Go</string>
+    <string name="options">Options</string>
+    <string name="new_tab">New Tab</string>
+    <string name="desktop_mode">Desktop</string>
+    <string name="history">History</string>
+    <string name="wordlist_test">Wordlist</string>
+    <string name="saved_creds">Saved</string>
+</resources>

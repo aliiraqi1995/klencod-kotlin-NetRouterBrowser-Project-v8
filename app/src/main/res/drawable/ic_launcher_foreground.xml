@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Globe / Web circle at top-right -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#90CAF9"
+        android:strokeWidth="2.8"
+        android:pathData="M68,36 m-14,0 a14,14 0 1,0 28,0 a14,14 0 1,0 -28,0" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#90CAF9"
+        android:strokeWidth="2.2"
+        android:pathData="M54,36 L82,36 M68,22 L68,50" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#90CAF9"
+        android:strokeWidth="2.0"
+        android:pathData="M68,22 C61,27 61,45 68,50 M68,22 C75,27 75,45 68,50" />
+
+    <!-- Router Antennas -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,42 L38,42 L38,60 L34,60 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M48,46 L52,46 L52,60 L48,60 Z" />
+
+    <!-- Wi-Fi Signal Arcs -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#4FC3F7"
+        android:strokeWidth="2.8"
+        android:strokeLineCap="round"
+        android:pathData="M28,36 C32,31 40,31 44,36" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#81D4FA"
+        android:strokeWidth="2.8"
+        android:strokeLineCap="round"
+        android:pathData="M23,30 C30,22 42,22 49,30" />
+
+    <!-- Router Body -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M26,60 L82,60 C84.2,60 86,61.8 86,64 L86,74 C86,76.2 84.2,78 82,78 L26,78 C23.8,78 22,76.2 22,74 L22,64 C22,61.8 23.8,60 26,60 Z" />
+
+    <!-- Router LED Indicators -->
+    <path
+        android:fillColor="#1565C0"
+        android:pathData="M33,69 m-2.5,0 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0" />
+    <path
+        android:fillColor="#00C853"
+        android:pathData="M43,69 m-2.5,0 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0" />
+    <path
+        android:fillColor="#1565C0"
+        android:pathData="M53,69 m-2.5,0 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0" />
+    <path
+        android:fillColor="#1565C0"
+        android:pathData="M65,67 L77,67 L77,71 L65,71 Z" />
+</vector>
